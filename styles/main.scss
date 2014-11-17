@@ -1,0 +1,194 @@
+/** Variables **/
+$header-height: 180px;
+$grey-font-color: rgb(136, 146, 161);
+
+/** Page Styles **/
+html,body {
+  height: 100%;
+  margin: 0;
+  background-color: #E5E5E5;
+  font-family: 'RobotoDraft', sans-serif;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.page-container {
+  margin: 20px auto;
+  max-width: 930px;
+}
+
+.page-item {
+  margin: 20px 20px;
+}
+
+h2, h3, h4, h5 {
+  font-weight: 400;
+  margin: 8px 12px;
+}
+
+p {
+  font-size: 14px;
+  color: $grey-font-color;
+  text-indent: 20px;
+}
+
+/** Helpers **/
+.text-center {
+  text-align: center;
+}
+.responsive {
+  max-width: 100%;
+}
+
+.responsive-column {
+  min-width: 270px;
+}
+
+.margin-bottom {
+  margin-bottom: 15px;
+}
+
+.pad-horizontal {
+  margin: 0 20px;
+}
+
+.pad-vertical {
+  margin: 20px 0;
+}
+
+.pad-10 {
+  padding: 0 10px;
+}
+
+.pad-12 {
+  padding: 0 12px;
+}
+
+.column {
+  width: 270px;
+  margin: 5px;
+}
+
+.column-image {
+  width: 240px;
+  height: 185px;
+  display: block;
+}
+
+.details {
+  text-align: left;
+  font-size: 14px;
+  color: $grey-font-color;
+}
+
+.details-small {
+  margin: 0;
+  font-size: 13px;
+  text-indent: 0px;
+}
+
+/** Polaroid Border **/
+.polaroid {
+  border: 15px solid #fff;
+  -webkit-box-shadow: 3px 3px 3px #777;
+  -moz-box-shadow: 3px 3px 3px #777;
+  box-shadow: 3px 3px 3px #777;
+  background-color: #fff;
+}
+
+/** Header Styles **/
+#navToolbar {
+    padding-top: 50px;
+    background-color: #40638b;
+    height: $header-height;
+}
+
+core-scaffold::shadow core-toolbar {
+  height: $header-height;
+}
+
+.header{
+  font-family: 'Merriweather', serif;
+  h2, h3, h4 {
+    font-weight: 500;
+  }
+  width: 100%;
+  height: 120px;
+  padding-top: 90px;
+  .sub-header {
+    font-size: .8em;
+  }
+  .sub-text {
+    margin: 0 30px;
+    font-size: .7em;
+    color: #98a9ca;
+  }
+}
+
+/** Homepage **/
+
+.areas-of-practice div {
+  text-align: center;
+  height: 30px;
+  color: $grey-font-color;
+}
+
+/** Who We Are **/
+
+/** Practice Areas **/
+#practice-areas {
+  h4 {
+    margin-left: 0px;
+  }
+}
+
+/** Contact Us **/
+#contact-us {
+  h4 {
+    margin-left: 0px;
+  }
+  p {
+    text-indent: 0px;
+  }
+}
+
+google-map {
+  display: block;
+  height: 300px;
+  width: 100%;
+}
+
+/** Media Queries **/
+
+@media (max-width: 750px){
+  .header{
+    h2, h3, h4 {
+      font-weight: 500;
+      font-size: .9em;
+    }
+    padding-top: 90px;
+    .sub-header {
+      margin: 5px 20px;
+      font-size: .7em;
+    }
+    .sub-text {
+      margin: 5px 15px;
+      font-size: .6em;
+    }
+  }
+}
+
+@media (max-width: 886px){
+  #home-page-img {
+    height: 320px;
+  }
+}
+
+
+
+
+

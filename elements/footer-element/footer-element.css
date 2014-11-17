@@ -1,0 +1,14 @@
+:host {
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: #0f3a69;
+  padding: 10px;
+  color: #87b0d1; }
+
+.column {
+  width: 270px;
+  margin: 5px; }
+
+.text-light {
+  color: #d0e7f9; }
