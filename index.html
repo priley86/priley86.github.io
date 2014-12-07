@@ -15,8 +15,7 @@
   <!-- endbuild-->
 
   <script src="./bower_components/webcomponentsjs/webcomponents.min.js"></script>
-  <link rel="import" href="./bower_components/font-roboto/roboto.html">
-  <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Enriqueta' rel='stylesheet' type='text/css'>
 
   <!-- build:vulcanized elements/elements.vulcanized.html -->
   <link rel="import" href="./elements/elements.html">
@@ -38,13 +37,13 @@
 <core-scaffold>
   <core-header-panel navigation flex mode="seamed">
       <core-toolbar id="navToolbar">
-        <img src="./images/logo.png">
+        <img id="logo" src="./images/logo.png">
       </core-toolbar>
       <core-menu theme="core-light-theme" selected="0">
-        <core-item icon="radio-button-on" label="Home"></core-item>
-        <core-item icon="radio-button-off" label="Who We Are"></core-item>
-        <core-item icon="radio-button-off" label="Practice Areas"></core-item>
-        <core-item icon="radio-button-off" label="Contact Us"></core-item>
+        <core-item label="Home" class="core-item pad-horizontal"></core-item>
+        <core-item label="Who We Are" class="core-item pad-horizontal"></core-item>
+        <core-item label="Practice Areas" class="core-item pad-horizontal"></core-item>
+        <core-item label="Contact" class="core-item pad-horizontal"></core-item>
       </core-menu>
   </core-header-panel>
 
@@ -53,12 +52,12 @@
       <div layout horizontal center-justified>
           <h2>Nommal Enterprises, LLC</h2>
       </div>
-      <!--<div layout horizontal center-justified>-->
-        <!--<h3 class="sub-header">Contract Finance and Accounting Guidance</h3>-->
-      <!--</div>-->
-      <!--<div layout horizontal center-justified>-->
-        <!--<h3 class="sub-text"><i>Providing small business the tools to achieve great success!</i></h3>-->
-      <!--</div>-->
+      <div layout horizontal center-justified>
+        <h3 class="sub-header">Contract Finance and Accounting Guidance</h3>
+      </div>
+      <div layout horizontal center-justified>
+        <h3 class="sub-text"><i>Providing small business the tools to achieve great success!</i></h3>
+      </div>
     </div>
   </div>
 
@@ -70,20 +69,20 @@
               <div layout horizontal center-justified class="page-item">
                 <img id="home-page-img" class="responsive polaroid" src="./images/homepage.jpg">
               </div>
-              <div layout horizontal around-justified wrap class="page-item polaroid text-center">
-                <div class="column">
+              <div layout horizontal start-justified wrap class="page-item polaroid text-center">
+                <div class="column text-left">
                   <h4>Finance & Accounting</h4>
                   <div layout horizontal center-justified>
                     <img class="column-image" src="./images/home-team.jpg">
                   </div>
-                  <div layout horizontal center-justified>
+                  <div layout horizontal start-justified>
                     <p class="details pad-10">
                       Our goal is to provide small businesses with the next step in finance and accounting services.
                       We work with small to mid sized businesses that already have bookkeeping services,
                       but are ready to develop a stronger understanding of their financial position.</p>
                   </div>
                 </div>
-                <div class="column">
+                <div class="column text-left">
                   <h4>Our Team</h4>
                   <div layout horizontal center-justified>
                     <img class="column-image" src="./images/home-hands.jpg">
@@ -93,7 +92,7 @@
                     Click here for a bio and links to our partners.
                   </p>
                 </div>
-                <div class="column">
+                <div class="column text-left">
                   <h4>Areas of Practice</h4>
                   <div layout vertical class="areas-of-practice">
                     <div>Contract CFO</div>
@@ -117,25 +116,29 @@
         <div class="page">
           <div class="page-container">
             <div class="page-item">
+              <h2>Who We Are</h2>
+            </div>
+            <div class="page-item">
               <div layout horizontal around-justified wrap>
                 <div class="polaroid margin-bottom" style="height:330px;">
                   <img class="responsive"  src="./images/shelly.jpg">
                 </div>
                 <div class="polaroid responsive-column pad-horizontal" flex>
                   <div vertical layout style="text-align: left;">
-                    <h3>Shelly Lammon, CPA</h3>
-                    <h4>Managing Partner</h4>
-                    <p>Shelly Lammon has been providing small business owners with contract strategic and financial guidance since 2007.
+                    <h3>Shelly Lammon, CPA <br/>
+                      Managing Partner
+                    </h3>
+                    <p class="details pad-10">Shelly Lammon has been providing small business owners with contract strategic and financial guidance since 2007.
                       Shelly's goal is to provide expertise and resources for small business owners and their leadership teams in order to make a difference in the financial direction of the clients we serve.
                     </p>
-                    <h4>Specialties</h4>
-                    <ul class="details">
+                    <h5>Specialties</h5>
+                    <ul class="details" style="margin: 0px;">
                       <li>Budgeting, forecasting, and financial reporting</li>
                       <li>Financial Analysis and ad hoc reporting</li>
                       <li>Working with small business owners and managers to better undertstand the financial position</li>
                       <li>Financial Presentation</li>
                     </ul>
-                    <h4>Experience</h4>
+                    <h5>Experience</h5>
                     <div class="details pad-10">
                       <div>Small Business Owner, 2005 - 2010</div>
                       <div>Duke University, Director of Endowment Administration, 2004 - 2006</div>
@@ -145,7 +148,7 @@
                       <div>Arthur Andersen, LLP, Audit Senior, 1997 - 2000</div>
                       <br/>
                     </div>
-                    <h4>Education</h4>
+                    <h5>Education</h5>
                     <div class="details pad-10">
                       <div>University of North Carolina at Chapel Hill - Kenan Flagler Business School Bachelor of Science in Business Administration, </div>
                       <div>Concentration in Finance, 1996</div>
@@ -166,19 +169,19 @@
                     <p class="pad-10">
                       In order to help our clients attain their business goals, we partner with several other local, highly respected service providers.
                     </p>
-                    <h4>Consulting Partners include:</h4>
+                    <h5>Consulting Partners include:</h5>
                     <div class="details pad-12">
                       <div>New Day Business Advisors</div>
                       <div>Business Lab, Inc.</div>
                     </div>
                     <br/>
-                    <h4>Tax Partners include:</h4>
+                    <h5>Tax Partners include:</h5>
                     <div class="details pad-12">
                       <div>Smith & Smith, CPA</div>
                       <div>Jim Wyatt, CPA</div>
                     </div>
                     <br/>
-                    <h4>Financial Planning Partners include:</h4>
+                    <h5>Financial Planning Partners include:</h5>
                     <div class="details pad-12">
                       <div>Jim Wyatt, CPA</div>
                     </div>
@@ -193,9 +196,11 @@
       <section id="practice-areas">
         <div class="page">
           <div class="page-container">
-            <div layout horizontal around-justified wrap class="page-item polaroid">
-              <h3>Practice Areas</h3>
-              <p>At Nommal Enterprises, LLC, we are able to provide small to mid-sized businesses with a wide range of services on a contract basis.   The major areas of expertise listed below are designed to help business owners and management teams better understand the financial position of a business in order to achieve successful decision making.</p>
+            <div class="page-item">
+              <h2>Practice Areas</h2>
+            </div>
+            <div layout horizontal start-justified wrap class="page-item polaroid">
+              <p style="margin: 5px;">At Nommal Enterprises, LLC, we are able to provide small to mid-sized businesses with a wide range of services on a contract basis.   The major areas of expertise listed below are designed to help business owners and management teams better understand the financial position of a business in order to achieve successful decision making.</p>
 
               <div class="column">
                 <div layout horizontal start-justified>
@@ -278,10 +283,10 @@
       <section id="contact-us">
         <div class="page">
           <div class="page-container">
+            <div class="page-item">
+              <h2>Contact</h2>
+            </div>
             <div layout horizontal start-justified wrap class="page-item polaroid">
-              <div layout horizontal center-justified style="width:100%;">
-                <h3>Contact Us</h3>
-              </div>
               <div class="column">
                 <div layout horizontal start-justified>
                   <h4>Address</h4>
@@ -295,7 +300,7 @@
                   <h4>Email</h4>
                 </div>
                 <div layout horizontal start-justified>
-                  <p class="details">shelly.lammon@gmail.com</p>
+                  <p class="details">shelly@nommalenterprises.com</p>
                 </div>
               </div>
               <div class="column">
@@ -303,7 +308,7 @@
                   <h4>Telephone</h4>
                 </div>
                 <div layout horizontal start-justified>
-                  <p class="details">919.342.5993</p>
+                  <p class="details">919.539.8797</p>
                 </div>
               </div>
             </div>

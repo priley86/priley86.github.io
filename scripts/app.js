@@ -10,9 +10,6 @@
       googleMap = document.querySelector('google-map');
 
   coreMenu.addEventListener('core-select', function(event) {
-    event.detail.item.icon = event.detail.isSelected ?
-      'radio-button-on' : 'radio-button-off';
-
     pages.selected = coreMenu.selected;
     coreScaffold.closeDrawer();
 	});
